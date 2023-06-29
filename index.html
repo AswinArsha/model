@@ -15,11 +15,11 @@
     <div id="card">
       <!-- <model-viewer> HTML element -->
       <model-viewer
-        src="Paneer.gltf"
+        src="https://cdn.glitch.global/9d6fcbb3-bba0-442b-9feb-1b56fe2c0670/Paneer.gltf?v=1688016109916"
+        ios-src="https://cdn.glitch.global/9d6fcbb3-bba0-442b-9feb-1b56fe2c0670/Paneer.gltf?v=1688016109916"
         ar
         ar-modes="scene-viewer webxr quick-look"
         camera-controls
-        poster="poster.webp"
         shadow-intensity="1"
         shadow-softness="1"
         auto-rotate
@@ -31,13 +31,31 @@
         </div>
         <button slot="ar-button" id="ar-button">View in your space</button>
         <div id="ar-prompt">
-          <img src="ar_hand_prompt.png" />
+          <img
+            src="https://cdn.glitch.global/9d6fcbb3-bba0-442b-9feb-1b56fe2c0670/ar_hand_prompt.png?v=1688016072110"
+          />
         </div>
       </model-viewer>
+
       <section class="attribution">
-        <span>
+        <div class="food-details">
           <h1>Paneer</h1>
-        </span>
+          <p>
+            Paneer is a popular Indian cheese made by curdling milk with lemon
+            juice or vinegar. It is a versatile ingredient used in many Indian
+            dishes, including curries, appetizers, and desserts. Paneer has a
+            mild and creamy taste, and its firm texture allows it to be easily
+            sliced or cubed. It is a good source of protein and calcium.
+          </p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="rating-text">4.0</span>
+          </div>
+        </div>
       </section>
     </div>
     <script src="script.js"></script>

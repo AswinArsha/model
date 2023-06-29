@@ -12,20 +12,20 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
-// // Handle AR instructions and placement
-// const modelViewer = document.querySelector('#food-model');
-// const arInstructions = document.getElementById('ar-instructions');
+// Handle AR instructions and placement
+const modelViewer = document.querySelector('#food-model');
+const arInstructions = document.getElementById('ar-instructions');
 
-// modelViewer.addEventListener('ar-status', (event) => {
-//   if (event.detail.status === 'session-started') {
-//     arInstructions.style.display = 'block';
-//     modelViewer.setAttribute('ar-scale', 'auto');
-//     modelViewer.setAttribute('ar-placement', 'floor');
-//     modelViewer.setAttribute('ar-auto-rotate', 'true');
-//   } else {
-//     arInstructions.style.display = 'none';
-//     modelViewer.removeAttribute('ar-scale');
-//     modelViewer.removeAttribute('ar-placement');
-//     modelViewer.removeAttribute('ar-auto-rotate');
-//   }
-// });
+modelViewer.addEventListener('ar-status', (event) => {
+  if (event.detail.status === 'session-started') {
+    arInstructions.style.display = 'block';
+    modelViewer.setAttribute('ar-scale', 'auto');
+    modelViewer.setAttribute('ar-placement', 'floor');
+    modelViewer.setAttribute('ar-auto-rotate', 'true');
+  } else {
+    arInstructions.style.display = 'none';
+    modelViewer.removeAttribute('ar-scale');
+    modelViewer.removeAttribute('ar-placement');
+    modelViewer.removeAttribute('ar-auto-rotate');
+  }
+});

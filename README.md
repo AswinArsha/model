@@ -1,5 +1,3 @@
-Certainly! Here's a sample README file for your food AR website project:
-
 # Food AR Website
 
 This is a web application that showcases different food items in augmented reality (AR) using the `<model-viewer>` element. Users can view 3D models of various food items and visualize them in their own space using AR capabilities.
